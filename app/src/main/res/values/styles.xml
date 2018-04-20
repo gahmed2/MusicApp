@@ -1,0 +1,114 @@
+<!--
+  ~ PROJECT LICENSE
+  ~
+  ~ This project was submitted by Gehad Ahmed as part of the Nanodegree At Udacity.
+  ~
+  ~ As part of Udacity Honor code, your submissions must be your own work, hence
+  ~ submitting this project as yours will cause you to break the Udacity Honor Code and the suspension of your account.
+  ~
+  ~ Me, the author of the project, allow you to check the code as a reference, but if you submit it, it's your own responsibility if you get expelled.
+  ~
+  ~ Copyright (c) 2018 Gehad Ahmed
+  ~
+  ~ Besides the above notice, the following license applies and this license notice must be included in all works derived from this project.
+  ~
+  ~ MIT License
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="rootLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/rootBackground</item>
+    </style>
+
+    <style name="playlistText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/rootMargin</item>
+        <item name="android:textSize">@dimen/playlistFont</item>
+        <item name="android:textColor">@color/defaultBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="rootList" parent="android:Theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_marginLeft">@dimen/rootMargin</item>
+        <item name="android:layout_marginRight">@dimen/rootMargin</item>
+        <item name="android:layout_marginBottom">@dimen/rootMargin</item>
+    </style>
+
+    <style name="textList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/elementMargin</item>
+        <item name="android:textColor">@color/defaultBlack</item>
+    </style>
+
+    <style name="imageItemList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxHeight">@dimen/maxImageItemHeight</item>
+        <item name="android:maxWidth">@dimen/maxImageItemWidth</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginTop">@dimen/elementMargin</item>
+        <item name="android:layout_marginBottom">@dimen/elementMargin</item>
+    </style>
+
+    <style name="eachTextList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/elementMargin</item>
+        <item name="android:textColor">@color/defaultBlack</item>
+    </style>
+
+    <style name="eachSongImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxHeight">@dimen/maxEachImageHeight</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_margin">@dimen/rootMargin</item>
+    </style>
+
+    <style name="playButtons">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/playButtonsHeight</item>
+        <item name="android:background">@color/imageButton</item>
+        <item name="android:layout_marginStart">@dimen/elementMargin</item>
+        <item name="android:layout_marginEnd">@dimen/elementMargin</item>
+    </style>
+
+</resources>
