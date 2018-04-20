@@ -1,10 +1,10 @@
 # MusicApp
 This app is created as part of Google and Udacity Android Basic Nanodegree.
 This app is for creating a music app for showing songs list.
---------------
+__________________
  This app is inspired from "FlavorAdapter" app created by Google team for demonstrating custom Adapter for ListView.
  Also, it's inspired from "EscaperPlaylist" app created by "Melsara" from our great community, and thanks for her for helping me to implement "setOnItemClickListener".
---------------
+__________________
 PROJECT LICENSE
 
 This project was submitted by Gehad Ahmed as part of the Nanodegree At Udacity.
