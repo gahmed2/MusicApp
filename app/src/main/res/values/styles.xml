@@ -42,14 +42,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="rootLayout">
+    <style name="rootLayout" parent="android:Theme">
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/rootBackground</item>
     </style>
 
-    <style name="playlistText">
+    <style name="playlistText" parent="android:Theme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/rootMargin</item>
@@ -68,14 +68,14 @@
         <item name="android:layout_marginBottom">@dimen/rootMargin</item>
     </style>
 
-    <style name="textList">
+    <style name="textList" parent="android:Theme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/elementMargin</item>
         <item name="android:textColor">@color/defaultBlack</item>
     </style>
 
-    <style name="imageItemList">
+    <style name="imageItemList" parent="android:Theme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:adjustViewBounds">true</item>
@@ -86,29 +86,42 @@
         <item name="android:layout_marginBottom">@dimen/elementMargin</item>
     </style>
 
-    <style name="eachTextList">
+    <style name="eachTextList" parent="android:Theme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/elementMargin</item>
         <item name="android:textColor">@color/defaultBlack</item>
     </style>
 
-    <style name="eachSongImage">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="eachSongImage" parent="android:Theme">
+        <item name="android:layout_width">@dimen/maxEachImageWidth</item>
+        <item name="android:layout_height">@dimen/maxEachImageHeight</item>
         <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">@dimen/maxEachImageWidth</item>
         <item name="android:maxHeight">@dimen/maxEachImageHeight</item>
-        <item name="android:scaleType">fitCenter</item>
+        <item name="android:scaleType">fitXY</item>
         <item name="android:layout_margin">@dimen/rootMargin</item>
     </style>
 
-    <style name="playButtons">
+    <style name="playButtons" parent="android:Theme">
         <item name="android:layout_weight">1</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/playButtonsHeight</item>
-        <item name="android:background">@color/imageButton</item>
+        <item name="android:layout_marginTop">@dimen/playButtonsMargin</item>
+        <item name="android:layout_marginBottom">@dimen/playButtonsMargin</item>
         <item name="android:layout_marginStart">@dimen/elementMargin</item>
         <item name="android:layout_marginEnd">@dimen/elementMargin</item>
+    </style>
+
+    <style name="homeButton" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/elementMargin</item>
+        <item name="android:padding">@dimen/elementMargin</item>
+        <item name="android:textColor">@color/defaultBlack</item>
+        <item name="android:background">@color/homeButton</item>
+        <item name="android:textSize">@dimen/homeButtonFont</item>
     </style>
 
 </resources>

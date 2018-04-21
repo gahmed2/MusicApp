@@ -45,6 +45,10 @@
     <dimen name="maxImageItemWidth">100dp</dimen>
 
     <dimen name="maxEachImageHeight">200dp</dimen>
+    <dimen name="maxEachImageWidth">200dp</dimen>
 
-    <dimen name="playButtonsHeight">100dp</dimen>
+    <dimen name="playButtonsHeight">50dp</dimen>
+    <dimen name="playButtonsMargin">25dp</dimen>
+    <dimen name="homeButtonFont">18sp</dimen>
+
 </resources>

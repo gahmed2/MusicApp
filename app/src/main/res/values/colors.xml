@@ -39,5 +39,5 @@
 
     <color name="defaultBlack">#000000</color>
     <color name="rootBackground">#E8EAF6</color>
-    <color name="imageButton">#1976D2</color>
+    <color name="homeButton">#1976D2</color>
 </resources>

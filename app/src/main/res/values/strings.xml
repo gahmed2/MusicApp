@@ -55,4 +55,6 @@
 
     <string name="playlist">Playlist</string>
 
+    <string name="home_Button">Home</string>
+
 </resources>

@@ -37,6 +37,8 @@ package com.example.gehad.musicapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,5 +66,17 @@ public class SongActivity extends AppCompatActivity {
 
         TextView eachSongArtist = findViewById(R.id.eachSongArtist);
         eachSongArtist.setText(songArtist);
+
+        /*
+         * on click listener to navigate back to the main playlist "Home"
+         */
+        Button home = findViewById(R.id.homeButton);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(SongActivity.this, MainActivity.class);
+                startActivity(home);
+            }
+        });
     }
 }

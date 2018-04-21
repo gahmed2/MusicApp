@@ -35,14 +35,14 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/eachSongLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:fillViewport="true"
     android:scrollbars="none"
     android:background="@color/rootBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -66,16 +66,35 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
+            <ImageView
+                android:id="@+id/backwardSound"
+                style="@style/playButtons"
+                android:src="@drawable/backward" />
+
+            <ImageView
+                android:id="@+id/stopSound"
+                style="@style/playButtons"
+                android:src="@drawable/stop" />
+
+            <ImageView
                 android:id="@+id/playSound"
                 style="@style/playButtons"
                 android:src="@drawable/play" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/pauseSound"
                 style="@style/playButtons"
                 android:src="@drawable/pause" />
 
+            <ImageView
+                android:id="@+id/forwardSound"
+                style="@style/playButtons"
+                android:src="@drawable/forward" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/homeButton"
+            style="@style/homeButton"
+            android:text="@string/home_Button" />
     </LinearLayout>
 </ScrollView>
